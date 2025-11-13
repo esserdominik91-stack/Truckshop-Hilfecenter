@@ -624,3 +624,119 @@
   "subtitle": "Frühling, Sommer, Herbst, Winter – die richtigen Checks",
   "cta": "Saison-Tipps"
 }
+{
+  "category": "Service & Kontakt",
+  "slug": "service-kontakt",
+  "topics": [
+    {
+      "title": "Service-Termin anfragen",
+      "slug": "service-termin",
+      "intro": "Wartung, Reparatur, TÜV – wir kümmern uns.",
+      "steps": [
+        {
+          "title": "Kontakt aufnehmen",
+          "description": "Schildern Sie kurz Ihr Anliegen – wir melden uns mit Terminvorschlägen.",
+          "actionType": "contact",
+          "contact": {
+            "phone": "(04131) 242526",
+            "email": "service@truckshop.de",
+            "subject": "Service-Termin Trailer",
+            "presetMessage": "Fahrzeug/Modell:\nAnliegen:\nWunschtermin(e):"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Notfall-Kontakt",
+      "slug": "notfall-kontakt",
+      "intro": "Bei Panne oder sicherheitsrelevanten Problemen.",
+      "steps": [
+        { "title": "Gefahr abwenden", "description": "Sichern Sie die Stelle (Warnblinker, Warndreieck) und bleiben Sie in Sicherheit.", "actionType": "checklist", "isCritical": true },
+        {
+          "title": "Jetzt anrufen",
+          "description": "Wir helfen mit erster Einordnung und nennen nächste Schritte.",
+          "actionType": "contact",
+          "contact": {
+            "phone": "(04131) 242526",
+            "email": "info@truckshop.de",
+            "subject": "NOTFALL Trailer",
+            "presetMessage": "Kurzbeschreibung des Notfalls:\nStandort:\nRückrufnummer:"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Garantie & Dokumente",
+      "slug": "garantie-dokumente",
+      "intro": "Unterlagen bereit halten erleichtert die Abwicklung.",
+      "steps": [
+        { "title": "Kaufunterlagen/Seriennummer", "description": "Rechnung, Fahrgestellnummer, ggf. COC/Abnahmen bereithalten.", "actionType": "checklist" },
+        { "title": "Fotos/Videos", "description": "Schaden aus mehreren Winkeln dokumentieren.", "actionType": "checklist" }
+      ]
+    }
+  ],
+  "subtitle": "Service buchen, Notfall & Garantie",
+  "cta": "Kontakt"
+}
+{
+  "category": "Schnelle Hilfe",
+  "slug": "schnelle-hilfe",
+  "topics": [
+    {
+      "title": "Gasgeruch – was tun?",
+      "slug": "gasgeruch-notfall",
+      "intro": "Sicherheit zuerst – keine Funken, keine Schalter.",
+      "steps": [
+        { "title": "Sofort Gas abstellen & lüften", "description": "Gasflasche schließen, Türen/Fenster öffnen, Trailer verlassen.", "actionType": "checklist", "isCritical": true },
+        { "title": "Kein elektrisches Schalten", "description": "Keine Schalter/Stecker betätigen, keine offenen Flammen.", "actionType": "checklist", "isCritical": true },
+        {
+          "title": "Service kontaktieren",
+          "description": "Wir koordinieren Prüfung/Reparatur.",
+          "actionType": "contact",
+          "contact": { "phone": "(04131) 242526", "email": "service@truckshop.de", "subject": "Gasgeruch – Notfall", "presetMessage": "Standort:\nBeschreibung:\nRückrufnummer:" }
+        }
+      ]
+    },
+    {
+      "title": "Kein Strom",
+      "slug": "kein-strom",
+      "intro": "Schnelle Erstdiagnose in 3 Schritten.",
+      "steps": [
+        { "title": "Hauptschalter/Batterie prüfen", "description": "Ist die Batterie geladen und korrekt angeklemmt? Hauptschalter an?", "actionType": "diagnosis" },
+        { "title": "Sicherungen/FI", "description": "12V-Sicherungen und 230V-FI prüfen.", "actionType": "diagnosis" },
+        {
+          "title": "Elektrik-Service",
+          "description": "Wenn weiter unklar → Kontakt aufnehmen.",
+          "actionType": "contact",
+          "contact": { "phone": "(04131) 242526", "email": "service@truckshop.de", "subject": "Kein Strom – Hilfe", "presetMessage": "Symptom:\nBisher geprüft:\nRückrufnummer:" }
+        }
+      ]
+    },
+    {
+      "title": "Wasserleck",
+      "slug": "wasserleck",
+      "intro": "Schaden begrenzen und Leck finden.",
+      "steps": [
+        { "title": "Pumpe aus / Wasser abstellen", "description": "Schalten Sie die Pumpe ab, entleeren Sie Druck.", "actionType": "checklist", "isCritical": true },
+        { "title": "Leck lokalisieren", "description": "Sichtprüfung an Schläuchen/Verbindern/Armaturen.", "actionType": "diagnosis" },
+        {
+          "title": "Sanitär-Service",
+          "description": "Wenn nicht eindeutig: Termin vereinbaren.",
+          "actionType": "contact",
+          "contact": { "phone": "(04131) 242526", "email": "service@truckshop.de", "subject": "Wasserleck – Hilfe", "presetMessage": "Wo austritt:\nWann bemerkt:\nRückrufnummer:" }
+        }
+      ]
+    },
+    {
+      "title": "Bedienungsanleitungen (PDF)",
+      "slug": "bedienungsanleitungen-pdf",
+      "intro": "Handbücher und Dokumente zum Herunterladen.",
+      "steps": [
+        { "title": "PDF: Allgemeines Handbuch", "description": "Öffnet das allgemeine PDF-Handbuch (Platzhalter-Link).", "actionType": "checklist" },
+        { "title": "PDF: Elektrik/12V", "description": "Öffnet das PDF zur Bordelektrik (Platzhalter-Link).", "actionType": "checklist" }
+      ]
+    }
+  ],
+  "subtitle": "Notfall-Kontakt & Anleitungen",
+  "cta": "Schnelle Hilfe"
+}
