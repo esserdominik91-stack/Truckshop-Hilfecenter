@@ -575,3 +575,52 @@
     ]
   }
 ]
+{
+  "category": "Saisonales",
+  "slug": "saisonales",
+  "topics": [
+    {
+      "title": "Frühjahrs-Inbetriebnahme",
+      "slug": "fruehjahrs-inbetriebnahme",
+      "intro": "So machen Sie Ihren Trailer nach der Winterpause wieder fit für die Saison.",
+      "steps": [
+        { "title": "Außen- & Unterbodencheck", "description": "Rahmen/Unterboden auf Rost, Risse, Beschädigungen prüfen.", "actionType": "checklist" },
+        { "title": "Reifen prüfen", "description": "Luftdruck korrigieren, Standplatten checken, ggf. tauschen.", "actionType": "checklist" },
+        { "title": "Wassersystem spülen", "description": "Frischwasser/Leitungen mit geeignetem Reiniger spülen, klar nachspülen.", "actionType": "checklist" },
+        { "title": "Batterie montieren & prüfen", "description": "Anklemmen, Spannung messen, 12V-Verbraucher testen.", "actionType": "checklist" },
+        { "title": "Funktionstest gesamt", "description": "Licht, Pumpe, Lüfter, Kühlgerät, Heizung im Kurztest.", "actionType": "checklist" }
+      ]
+    },
+    {
+      "title": "Sommer-Check",
+      "slug": "sommer-check",
+      "intro": "Hitze, UV und Gewitter: so bleibt alles funktionsfähig.",
+      "steps": [
+        { "title": "Kühlung & Belüftung prüfen", "description": "Lüfter/Kühlgerät testen, Lüftungsgitter reinigen.", "actionType": "checklist" },
+        { "title": "Markise/Wind beachten", "description": "Bei starkem Wind einfahren oder sturmfest abspannen.", "actionType": "checklist" },
+        { "title": "Reifendruck bei Hitze", "description": "Auf Herstellerangaben achten; Temperaturanstieg einplanen.", "actionType": "checklist" }
+      ]
+    },
+    {
+      "title": "Herbst-Check",
+      "slug": "herbst-check",
+      "intro": "Vorbereitung auf Nässe, Laub und frühe Dunkelheit.",
+      "steps": [
+        { "title": "Dichtungen/Fenster prüfen", "description": "Gummis pflegen, Dachluken reinigen, Abläufe frei halten.", "actionType": "checklist" },
+        { "title": "Lichtanlage intensiv testen", "description": "Alle Leuchten/Steckverbindungen auf Feuchte/Korrosion prüfen.", "actionType": "checklist" }
+      ]
+    },
+    {
+      "title": "Winterfestmachung & Einlagerung",
+      "slug": "winterfestmachung-einlagerung",
+      "intro": "Vor Frost und langen Standzeiten sorgfältig vorbereiten.",
+      "steps": [
+        { "title": "Wassersystem komplett entleeren", "description": "Frisch-/Abwasser/Boiler entleeren, Leitungen/Hähne öffnen.", "actionType": "checklist", "isCritical": true },
+        { "title": "Frostschutz in Siphons", "description": "Geeigneten Frostschutz in alle Geruchsverschlüsse füllen.", "actionType": "checklist" },
+        { "title": "Batterie abklemmen/ausbauen", "description": "Kühl/trocken lagern, regelmäßig nachladen.", "actionType": "checklist" }
+      ]
+    }
+  ],
+  "subtitle": "Frühling, Sommer, Herbst, Winter – die richtigen Checks",
+  "cta": "Saison-Tipps"
+}
