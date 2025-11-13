@@ -1,20 +1,26 @@
-/* ========== Design: Truckshop Blau & Anthrazit ========== */
+/* ===========================================
+   Truckshop Hilfecenter – Blau + Anthrazit Theme
+   Vollständige, finale Version
+   =========================================== */
+
+/* ---------- Farb-Design: Blau & Anthrazit ---------- */
 :root{
-  --bg: #1e293b;
-  --surface: #f8fafc;
-  --surface-2: #f1f5f9;
-  --text: #0f172a;
-  --text-muted: #475569;
-  --border: #cbd5e1;
-  --ring: #2563eb;
-  --primary: #2563eb;
-  --success: #16a34a;
-  --danger: #dc2626;
+  --bg: #1e293b;            /* Anthrazit Hintergrund */
+  --surface: #f8fafc;       /* Helle Flächen */
+  --surface-2: #f1f5f9;     /* Sekundäre helle Fläche */
+  --text: #0f172a;          /* Dunkler Text */
+  --text-muted: #475569;    /* Gedimmter Text */
+  --border: #cbd5e1;        /* Helle Linien */
+  --ring: #2563eb;          /* Blau Fokus */
+  --primary: #2563eb;       /* Blau Akzent */
+  --primary-light: #3b82f6; /* Hellere Variante */
+  --success: #16a34a;       /* Grün */
+  --danger: #dc2626;        /* Rot */
   --radius: 14px;
   --shadow: 0 10px 25px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.05);
 }
 
-/* Dark Mode */
+/* ---------- Dark Mode Auto ---------- */
 @media (prefers-color-scheme: dark){
   :root{
     --bg: #0f172a;
@@ -28,10 +34,10 @@
   }
 }
 
-/* ========== Basics ========== */
+/* ---------- Base Reset ---------- */
 *,
 *::before,
-*::after{box-sizing:border-box;}
+*::after{ box-sizing:border-box; }
 
 body{
   margin:0;
@@ -39,31 +45,44 @@ body{
   background:var(--bg);
   color:var(--text);
   -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
 }
 
-/* ========== Header ========== */
+/* ===========================================
+   HEADER
+   =========================================== */
 .header{
-  position:sticky;top:0;z-index:50;
+  position:sticky; top:0; z-index:50;
   background:linear-gradient(90deg,#0f172a 0%,#1e293b 40%,#334155 100%);
   color:#fff;
   padding:.9rem 1rem 1rem;
   border-bottom:2px solid var(--primary);
   box-shadow:0 4px 16px rgba(0,0,0,.2);
 }
+
 .header__brand{
-  display:flex;align-items:center;gap:.8rem;
+  display:flex; align-items:center; gap:.8rem;
 }
+
 .logo-placeholder{
-  width:46px;height:46px;border-radius:12px;
+  width:46px; height:46px; border-radius:12px;
   background:linear-gradient(135deg,#2563eb,#3b82f6);
-  display:grid;place-items:center;
-  font-weight:700;font-size:1.2rem;
+  display:grid; place-items:center;
+  font-weight:700; font-size:1.2rem;
   color:#fff;
 }
-.header h1{margin:0;font-size:1.25rem;}
-.header__subtitle{margin:.15rem 0 0;font-size:.85rem;color:#cbd5e1;}
-.header__search{margin-top:.7rem;}
+
+.header h1{
+  margin:0; font-size:1.25rem;
+}
+
+.header__subtitle{
+  margin:.15rem 0 0;
+  font-size:.85rem;
+  color:#cbd5e1;
+}
+
+.header__search{ margin-top:.7rem; }
+
 .header__search input{
   width:100%;
   padding:.65rem .9rem;
@@ -73,25 +92,37 @@ body{
   color:#0f172a;
   transition:all .2s;
 }
+
 .header__search input:focus{
   border-color:var(--primary);
   box-shadow:0 0 0 3px rgba(37,99,235,.3);
   outline:none;
 }
 
-/* ========== Layout ========== */
-.app{padding:1.3rem;max-width:1000px;margin:0 auto;}
+/* ===========================================
+   LAYOUT / CONTAINER
+   =========================================== */
+.app{
+  padding:1.3rem;
+  max-width:1000px;
+  margin:0 auto;
+}
+
 .section-title{
-  font-size:1.1rem;color:var(--text-muted);
+  font-size:1.1rem;
+  color:var(--text-muted);
   margin:1rem 0 .7rem;
 }
 
-/* ========== Grid Cards ========== */
+/* ===========================================
+   GRID CARDS
+   =========================================== */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
   gap:1rem;
 }
+
 .card{
   background:var(--surface);
   border-radius:var(--radius);
@@ -101,17 +132,41 @@ body{
   transition:all .2s;
   cursor:pointer;
 }
+
 .card:hover{
   transform:translateY(-3px);
   box-shadow:0 12px 32px rgba(37,99,235,.2);
   border-color:var(--primary);
 }
-.card h3{margin:0 0 .3rem;font-size:1rem;color:var(--text);}
-.card p{margin:0;font-size:.9rem;color:var(--text-muted);}
 
-/* ========== Back Button ========== */
+.card h3{
+  margin:0 0 .3rem;
+  font-size:1rem;
+  color:var(--text);
+}
+
+.card p{
+  margin:0;
+  font-size:.9rem;
+  color:var(--text-muted);
+}
+
+/* CTA Badge in Cards */
+.card .btn-small{
+  margin-top:.6rem;
+  background:var(--primary);
+  color:#fff;
+  border:none;
+  padding:.35rem .7rem;
+  border-radius:8px;
+  font-size:.8rem;
+}
+
+/* ===========================================
+   BACK BUTTON
+   =========================================== */
 .back-btn{
-  display:inline-flex;align-items:center;gap:.45rem;
+  display:inline-flex; align-items:center; gap:.45rem;
   margin:.4rem 0 1rem;
   padding:.5rem 1rem;
   background:var(--primary);
@@ -121,11 +176,25 @@ body{
   cursor:pointer;
   transition:transform .15s,background .15s;
 }
-.back-btn:hover{background:#3b82f6;transform:translateY(-1px);}
-.back-btn:active{transform:scale(.97);}
 
-/* ========== Topic & Steps ========== */
-.topic-header h2{margin:0 0 .4rem;font-size:1.3rem;}
+.back-btn:hover{
+  background:#3b82f6;
+  transform:translateY(-1px);
+}
+
+.back-btn:active{
+  transform:scale(.96);
+}
+
+/* ===========================================
+   TOPIC HEADER / INTRO
+   =========================================== */
+.topic-header h2{
+  margin:0 0 .4rem;
+  font-size:1.3rem;
+  color:var(--text);
+}
+
 .topic-intro{
   margin:0 0 1.1rem;
   background:var(--surface-2);
@@ -134,14 +203,19 @@ body{
   color:var(--text-muted);
   border:1px solid var(--border);
 }
+
+/* ===========================================
+   STEPS
+   =========================================== */
 .steps{
   list-style:none;
+  padding:0;
+  margin:0;
   display:flex;
   flex-direction:column;
   gap:1rem;
-  padding:0;
-  margin:0;
 }
+
 .step{
   background:var(--surface);
   border:1px solid var(--border);
@@ -149,54 +223,145 @@ body{
   border-radius:var(--radius);
   padding:1rem 1.1rem;
   box-shadow:var(--shadow);
-  transition:border-color .2s,box-shadow .2s;
+  transition:all .2s;
 }
-.step:hover{border-left-color:#3b82f6;}
-.step-header{display:flex;justify-content:space-between;align-items:center;}
-.step-title{font-weight:600;font-size:1rem;}
+
+.step:hover{
+  border-left-color:var(--primary-light);
+}
+
+.step-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.step-title{
+  font-weight:600;
+  font-size:1rem;
+}
+
+/* Badges */
 .badge{
   border-radius:999px;
-  font-size:.7rem;
+  font-size:.72rem;
   padding:.25rem .65rem;
   background:#e2e8f0;
   color:#1e293b;
 }
-.badge-critical{background:#fee2e2;color:var(--danger);}
 
-/* ========== Buttons ========== */
+.badge-critical{
+  background:#fee2e2;
+  color:var(--danger);
+}
+
+/* Description */
+.step-body{
+  margin-top:.45rem;
+  font-size:.95rem;
+  color:var(--text-muted);
+  line-height:1.5;
+}
+
+/* Buttons in Steps */
+.step-actions{
+  margin-top:.7rem;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+}
+
+/* ===========================================
+   BUTTONS
+   =========================================== */
 .btn{
-  display:inline-flex;align-items:center;justify-content:center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   padding:.5rem .95rem;
   font-size:.9rem;
   border-radius:10px;
   border:1px solid var(--border);
   cursor:pointer;
   background:var(--surface-2);
+  color:var(--text);
   transition:all .15s;
 }
-.btn:hover{background:#e0e7ff;border-color:var(--primary);}
+
+.btn:hover{
+  background:#e0e7ff;
+  border-color:var(--primary);
+}
+
 .btn-primary{
   background:var(--primary);
   color:#fff;
   border-color:var(--primary);
 }
-.btn-primary:hover{background:#3b82f6;}
+
+.btn-primary:hover{
+  background:#3b82f6;
+}
+
 .btn-done{
   background:var(--success);
   color:#fff;
   border:none;
 }
+
 .btn-outline{
   background:transparent;
   color:var(--primary);
   border-color:var(--primary);
 }
+
 .btn-outline:hover{
   background:var(--primary);
   color:#fff;
 }
 
-/* ========== Footer ========== */
+/* ===========================================
+   SEARCH RESULTS DROPDOWN
+   =========================================== */
+.search-results{
+  list-style:none;
+  padding:0;
+  margin:.4rem 0 0;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:var(--surface);
+  box-shadow:var(--shadow);
+}
+
+.search-results li{
+  padding:.8rem .9rem;
+  border-bottom:1px solid var(--border);
+  cursor:pointer;
+  transition:background .12s ease;
+}
+
+.search-results li:hover{
+  background:var(--surface-2);
+}
+
+.search-results li:last-child{
+  border-bottom:none;
+}
+
+.search-results strong{
+  display:block;
+  font-size:.95rem;
+}
+
+.search-results small{
+  font-size:.8rem;
+  color:var(--text-muted);
+}
+
+/* ===========================================
+   FOOTER
+   =========================================== */
 .footer{
   text-align:center;
   padding:1rem;
@@ -206,9 +371,13 @@ body{
   border-top:2px solid var(--primary);
 }
 
-/* ========== Responsive ========== */
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
 @media(max-width:640px){
-  .app{padding:1rem;}
-  .grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));}
-  .header h1{font-size:1.1rem;}
+  .app{ padding:1rem; }
+  .grid{
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  }
+  .header h1{ font-size:1.1rem; }
 }
